@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class task2{
+	public static void main(String[] args){
+		Scanner key = new Scanner(System.in);
+		
+		System.out.print("Enter your First Name:");
+		String firstName = key.nextLine();
+		
+		System.out.print("Enter your second Name: ");
+		String secondName = key.nextLine();
+		
+		System.out.print("Enter your Third Name: ");
+		String thirdName = key.nextLine();
+		
+		StringBuilder sb = new StringBuilder(); 
+		sb.append(firstName); 
+		sb.append(" "); 
+		sb.append(secondName); 
+		sb.append(" "); 
+		sb.append(thirdName); 
+		String result1 = sb.toString();
+		
+		
+
+		System.out.print("Enter your First Name:");
+                firstName = key.nextLine();
+                
+                System.out.print("Enter your second Name: ");
+                secondName = key.nextLine();
+                
+                System.out.print("Enter your Third Name: ");
+                thirdName = key.nextLine();
+                
+                
+                sb.append(firstName); 
+                sb.append(" ");
+                sb.append(secondName); 
+                sb.append(" "); 
+                sb.append(thirdName);
+                String result2 = sb.toString();
+                
+                
+	
+		if(result1 == result2){
+		System.out.println("Names are same");
+		}else{
+		System.out.println("Names are not the same");
+		}
+
+	}
+
+	}
