@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class task{
+	public static void main(String[] args){
+		Scanner key = new Scanner(System.in);
+		
+		System.out.print("Enter your First Name:");
+		String firstName = key.nextLine();
+		
+		System.out.print("Enter your second Name: ");
+		String secondName = key.nextLine();
+		
+		System.out.print("Enter your Third Name: ");
+		String thirdName = key.nextLine();
+		
+		StringBuilder sb = new StringBuilder(); 
+		sb.append(firstName); 
+		sb.append(" "); 
+		sb.append(secondName); 
+		sb.append(" "); 
+		sb.append(thirdName); 
+		String result = sb.toString();
+		System.out.println(result);
+		
+		String modified = result.replace("a","@");
+		modified = modified.replace("e", "3");
+		modified = modified.toUpperCase();
+		System.out.println(modified);
+		
+		
+		}
+		
+		
+	}
